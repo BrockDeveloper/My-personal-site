@@ -1,0 +1,76 @@
+# Global site configuration
+baseURL = "https://brockdeveloper.github.io/"
+languageCode = "en-us"
+title = "I'm Brock DEV"
+theme = "cactus"
+copyright = "Brock DEV"
+disqusShortname = "Brock"
+enableEmoji = true
+
+
+# Main menu which appears below site header
+[[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+[[menu.main]]
+    name = "About"
+    url = "/about"
+    weight = 2
+[[menu.main]]
+    name = "Projects"
+    url = "/projects"
+    weight = 4
+[[menu.main]]
+    name = "Contact"
+    url = "/contact"
+    weight = 6
+
+
+# Markup definition
+[markup]
+    [markup.tableOfContents]
+        endLevel = 4
+        ordered = false
+        startLevel = 2
+
+
+# Parameters of the site
+[params]
+    colortheme = "white"
+    rss = true
+    googleAnalyticsAsync = true
+    css = ["css/custom.css"]
+
+    # Home page settings
+    description = "I turn dreams into code. I like to share things on GitHub and contribute to the open source community. Discover my projects."
+    mainSection = "posts"
+    showAllPostsOnHomePage = false
+    postsOnHomePage = 0
+    tagsOverview = false
+    showProjectsList = true
+    projectsonhomepage = 3
+    projectsUrl = "https://github.com/BrockDeveloper" # title link for projects list
+    logo = "https://i.imgur.com/YiDlzwl.png"
+
+    # data and time format for entire site
+    dateFormat = "2006-01-02" # default
+
+    # Post page settings
+    show_updated = false # default
+
+    #comments are disabled
+    [params.comments]
+      enabled = false
+      engine = "disqus"
+
+    # social networks links
+    [[params.social]]
+      name = "github"
+      link = "https://github.com/brockdeveloper"
+    [[params.social]]
+      name = "twitter"
+      link = "https://www.twitter.com/_ABroccoletti_"
+    [[params.social]]
+      name = "email"
+      link = "info@brockdev.it"
